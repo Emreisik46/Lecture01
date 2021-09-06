@@ -6,7 +6,7 @@ namespace lec01.Tests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void Main_is_divisible_by_four()
         {
 
         }

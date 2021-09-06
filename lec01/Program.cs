@@ -6,7 +6,22 @@ namespace lec01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
+    
+
+        public bool isLeapYear(int year)
+        {
+            if (year < 1582)
+            {
+                System.Console.WriteLi
+             return false;   
+            }
+        if ((year/4) % 4 == 0)
+        {
+              return true;
+         }
+        return false; 
+     }
     }
 }
