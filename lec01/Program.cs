@@ -2,9 +2,9 @@
 
 namespace lec01
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Program program = new Program();
 
@@ -13,22 +13,17 @@ namespace lec01
                 string input = System.Console.ReadLine();
                 int inputToInt = Int32.Parse(input);  
                  
-                System.Console.WriteLine(program.isLeapYear(inputToInt));
+                program.isLeapYear(inputToInt);
             }
-            catch (System.FormatException e)
+            catch (System.FormatException)
             {
                 System.Console.WriteLine("You may only type numbers as input!");
-            
             }
-            catch (System.Exception e)
+            catch (System.Exception)
             {
-                 System.Console.WriteLine("We have caught an exception. Please contact the developers!");
-           
+                 System.Console.WriteLine("We have caught an exception. Please contact the developers!"); 
             }
-            
 
-           
-            
         }
     
 
@@ -43,11 +38,11 @@ namespace lec01
 
             if (year % 400 == 0)
             {
-                System.Console.WriteLine("Yay");
+                System.Console.WriteLine("Yay!");
                 return true;
             }
-            System.Console.WriteLine("Nay");
-            return false; 
+                System.Console.WriteLine("Nay!");
+                return false; 
          }
     }
 }
