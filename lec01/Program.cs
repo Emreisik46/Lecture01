@@ -36,7 +36,7 @@ namespace lec01
                 return false;   
             }
 
-            if (year % 400 == 0)
+            if (year % 400 == 0 || year % 100 == 0)
             {
                 System.Console.WriteLine("Yay!");
                 return true;
