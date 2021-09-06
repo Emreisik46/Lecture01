@@ -43,8 +43,10 @@ namespace lec01
 
             if (year % 400 == 0)
             {
+                System.Console.WriteLine("Yay");
                 return true;
             }
+            System.Console.WriteLine("Nay");
             return false; 
          }
     }
